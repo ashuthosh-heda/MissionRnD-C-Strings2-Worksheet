@@ -26,7 +26,7 @@ char * get_sub_string(char *str, int i, int j){
 	}
 
 	int l = 0;
-	char *subStr = (char*)calloc(20,sizeof(char));
+	char *subStr = (char*)calloc((j-i)+2,sizeof(char));
 	for (int k = i; k <= j; k++){
 		subStr[l++] = str[k];
 	}
